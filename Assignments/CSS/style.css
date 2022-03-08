@@ -54,6 +54,7 @@ a:hover {
     }   
     .col-span-4 {
         grid-column: span 4;
+    }
 }
 
 /***** Icons *****/
@@ -82,7 +83,59 @@ a:hover {
   .fa-twitter {
     color: black;
   }
-
+  /***** Navigation Using Flexbox *****/
+  nav {
+      background-color: #525252;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+  }
+  nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+  }
+  nav li {
+      margin: 0 0.5rem;
+  }
+  nav a:link, a:visited {
+      color: white;
+      text-decoration: none;
+      font-size: 1.125rem;
+      padding: 1rem;
+      display: block;
+      transition: ease-in-out 250ms;
+  }
+  nav a:hover {
+      background-color: #9abcf8;
+      color: white;
+  }
+  .menu {
+      display: none;
+  }
+  .menu-line {
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      margin-bottom: 4px;
+  }
+  
+  @media all and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+  }
+  
   /***** Components *****/
   .button:link, .button:visited {
       color: white;
