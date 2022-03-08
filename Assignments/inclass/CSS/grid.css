@@ -1,0 +1,83 @@
+:root{
+    --primary-color: #003f5f;
+    --second-color: #007cbc;
+    --neutral-grey: #747e83;
+    --neutral-light: #ffffff;
+    --highlight-color: #f5ba36;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    color: var(--neutral-light);
+}
+h2{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+p,ul,ol{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--neutral-grey);
+}
+img {
+    max-width: 100%;
+}
+
+/***** Layout *****/
+.container{
+    background-color: red;
+    width: min(95%, 75rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr); 
+}
+.container > * {
+    grid-column: span 12;
+}
+
+/* Destop Layout */
+@media screen and (min-width: 40rem) { 
+    .siteid{
+        grid-column: 1 / span 3;
+        background-color: blue;
+    }
+    .logo{
+        grid-column: 6 / span 2;
+        background-color: blue;
+    }
+    .language{
+        grid-column: 11 / span 2;
+        background-color: blue;
+    }
+    .image{
+        grid-column: 1 / span 4;
+        background-color: yellow;
+    }
+    .icon{
+        grid-column: 1 / span 3;
+        background-color: aqua;
+    }
+    .familysite{
+        grid-column: 6 / span 2;
+        background-color: green;
+    }
+    .copyright{
+        grid-column: 10 / span 2;
+        background-color: pink;
+    }
+    .col-span-2{
+        grid-column: span 2;
+        background-color: purple;
+    }
+}
