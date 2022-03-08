@@ -23,13 +23,13 @@ h3{
 }
 .circle{
     border-radius: 50%;
-    border: 5px solid #6fdeec;
+    border: 5px solid #6edceb;
 }
-a: link, a:visited {
-    color: #6fdeec;
+a:link, a:visited {
+    color: #6edceb;
     text-decoration: none;
 }
-a: :hover {
+a:hover {
     color: #6e8fc7;
     text-decoration: underline;
 }
