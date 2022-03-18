@@ -81,3 +81,15 @@ img {
         background-color: purple;
     }
 }
+    
+    /* Destop Layout */
+@media screen and (min-width: 40rem) { 
+    .col-span-6{
+        grid-column: span 6;
+        background-color: purple;
+    }
+    .col-span-3{
+        grid-column: span 3;
+        background-color: #f5ba36;
+    }
+}
