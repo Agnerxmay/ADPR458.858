@@ -1,0 +1,43 @@
+
+/***** Mobile Layout *****/
+.container{
+    background-color: black;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+
+
+/* Destop Layout */
+@media screen and (min-width: 40rem) { 
+    .fa {
+        padding: 10px;
+        font-size: 40px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        grid-column: 1 / span 2;
+    }
+
+    .fa-airbnb {
+        color: white;
+    }
+    .nav {
+        grid-column: 4 / span 4;
+    }
+    .right {
+        grid-column: 8 / span 2;
+        color: white;
+        font: Arial;
+        font-size: 28;
+    }
+    .globe {
+        grid-column: 9 / span 1;
+    }
+    .sign-up-bar {
+        grid-column: 10 / span 1;
+    }
+   
+

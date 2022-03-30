@@ -1,0 +1,650 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+h1 {
+    color: black;
+    font-size: 3rem;
+    width: 100%;
+    margin: 0;
+}
+h2 {
+    color: black;
+    font-size: 2.5rem;
+    background-color: white;
+    padding: 50px 0;
+    margin: 0;
+    justify-content: left;
+}
+img {
+    max-width: 100%;
+}
+.location-section {
+grid-template-columns: repeat(12, 1fr);
+}
+
+/***** Footer *****/
+footer {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+
+
+.box {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 75rem;
+    height: 16rem;
+    align-content: space-between;
+    padding: 1rem 2rem;
+    column-gap: 4rem;
+}
+.box-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 13rem;
+    padding-left: 2rem;
+  }
+
+
+  
+
+/***** Icons *****/
+.footer-right-icon a {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+/* Facebook */
+.fa-facebook {
+    color: black;
+  }
+
+  .fa-instagram {
+    color: black;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    color: black;
+  }
+.homepage {
+    background-color: black;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+
+.homepage >* {
+    grid-column: span 12;
+}
+.container {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+
+.container >* {
+    grid-column: span 12;
+}
+
+.Homepage-places {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+    margin-bottom: 5rem;
+}
+.Homepage-places >* {
+    grid-column: span 12;
+}
+.aboutpage {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+
+.aboutpage >* {
+    grid-column: span 12;
+}
+
+/***** Homepage Searchbar*****/
+.homepage-searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homepage-searchbar img {
+    margin: 20px;
+    max-width: 90%;
+    padding: 0 60px
+}
+
+/***** Homepage Tent Background*****/
+.homepage-tent-background {
+    background-image: url("../assignments/Adobe XD/not\ sure\ where\ to\ go.png");
+    background-color: black;
+    height: 62rem;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    padding: 30px 10px;
+}
+.homepage-tent-background a {
+    color: purple;
+    text-decoration: none;
+}
+.button {
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 3.5rem;
+    width: 20%;
+    padding: 10px 24px;
+    margin: 51.7rem 1rem 1rem 0;
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: lightgrey;
+}
+
+/***** Cards *****/
+.inspiration-section {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr); 
+    margin: 0 auto;
+    width: min(95%, 75rem);
+}
+.inspiration-section >* {
+    grid-column: span 1;
+}
+.card-1{
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    background-color: rgb(243, 81, 70);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; 
+
+}
+.card-2{
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    background-color: maroon;
+}
+.card-3{
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    background-color: rgb(226, 39, 26);
+}
+.card-4{
+    text-align: left;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    background-color: purple;
+}
+.card-title{
+    color: white;
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+    font-size: 1.5rem;
+}
+.card-text {
+    color: white;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem;
+}
+
+/***** Experience Inspo *****/ 
+.Experience-Inspo {
+    justify-content: center;
+    display: grid;
+}
+
+
+/***** Gift Card *****/ 
+  .giftcards{
+    background-color: white;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    width: max-content;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); 
+    width: min(95%, 75rem);
+}
+.giftcards > * {
+    grid-column: span 1;
+}
+
+.learn-more-button {
+    background-color: black;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    height: 2.5rem;
+    width: 25%;
+    padding: 10px 24px;
+    margin: 1rem 2rem 1rem 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.learn-more-button:hover {
+    background-color: lightgrey;
+}
+.col-span-1 img {
+    max-width: 100%;
+}
+
+/***** Question About Host *****/
+.homepage-host-background {
+    background-image: url("../assignments/Adobe XD/Pics/Questions\ about\ Hosting.png");
+    background-color: white;
+    height: 45rem;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: contain;
+    background-position: center;
+}
+.homepage-host-background a {
+    color: black;
+    text-decoration: none;
+}
+.homepage-host-background-button {
+    background-color: white;
+    font-size: 12px;
+    text-align: center;
+    height: 2.2rem;
+    padding: 10px 10px;
+    margin: 36rem 1rem 1rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.homepage-host-background-button:hover {
+    background-color: lightgrey;
+}
+
+/***** Inspiration for future getaways using Flexbox *****/
+  nav {
+    background-color: white;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: nowrap;
+}
+ul img {
+    height: 20px;
+    width: 20px;
+    margin: 1rem 0 0 2rem;
+}
+nav li {
+    color: darkgrey;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+nav a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+nav a:hover {
+    background-color: lightgray;
+    color: white;
+}
+.menu { 
+    display: none;
+}
+.menu-line {
+    width: 10px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.city {
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.states {
+    color: darkgrey;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+  /***** Desktop Layout *****/
+  @media screen and (min-width: 40rem) {
+    .homepage-navbar {
+        grid-column: 1 / span 3;
+        margin: 4% 0;
+    }
+    .homepage-navbar-middle-1 {
+        grid-column: 4 / span 2;
+        color: white;
+        background-color: black;
+        justify-content: right;
+        display: grid;
+        font-size: 0.95rem;
+        margin: 4% 0;
+    }
+    .homepage-navbar-middle-2 {
+        grid-column: 6 / span 1;
+        color: white;
+        background-color: black;
+        justify-content: center;
+        display: grid;
+        font-size: 0.95rem;
+        margin: 8% 0;
+    }
+    .homepage-navbar-middle-3 {
+        grid-column: 7 / span 2;
+        color: white;
+        background-color: black;
+        justify-content: left;
+        display: grid;
+        font-size: 0.95rem;
+        margin: 4% 0;
+    }
+    .homepage-navbar-right-1 {
+        color: white;
+        grid-column: 9 / span 2;
+        font-size: 0.95rem;
+        justify-content: right;
+        display: grid;
+        margin: 4% 0;
+    }
+    .homepage-navbar-right-2 {
+        color: white;
+        grid-column: 11/ span 2;
+        justify-content: left;
+        display: grid;
+    }
+    .homepage-tent-background {
+        max-width: 100%;
+    }
+ 
+    .inspiration-section {
+        display: grid;
+        justify-content: left;
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .col-span-1 {
+        grid-column: span 1;
+        background-color: white;
+    }
+
+    .homepage-host-background {
+        max-width: 100%;
+    }
+    .Homepage-places-1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+    }
+    .Homepage-places-2 {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+    }
+    .Homepage-places-3 {
+        grid-column: 6 / span 1;
+        grid-row: 1;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+    }
+    .Homepage-places-4 {
+        grid-column: 9 / span 1;
+        grid-row: 1;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+    }
+    .Homepage-places-5 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 1rem;
+    }
+    .Homepage-places-6 {
+        grid-column: 3 / span 1;
+        grid-row: 2;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 1rem;
+    }
+    .Homepage-places-7 {
+        grid-column: 6 / span 1;
+        grid-row: 2;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 1rem;
+    }
+    .Homepage-places-8 {
+        grid-column: 9 / span 1;
+        grid-row: 2;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 1rem;
+    }
+    .Homepage-places-9 {
+        grid-column: 1 / span 1;
+        grid-row: 3;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 2rem;
+    }
+    .Homepage-places-10 {
+        grid-column: 3 / span 1;
+        grid-row: 3;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 2rem;
+    }
+    .Homepage-places-11 {
+        grid-column: 6 / span 1;
+        grid-row: 3;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        height: 10px;
+        width: max-content;
+        margin-top: 2rem;
+    }
+    .Homepage-places-12 {
+        grid-column: 9 / span 1;
+        grid-row: 3;
+        font-size: 0.95rem;
+        justify-content: left;
+        display: grid;
+        color: black;
+        text-decoration: underline;
+        height: 10px;
+        width: max-content;
+        margin-top: 2rem;
+    }
+  }
+
+
+
+/***** About Page *****/
+.aboutpage-button a {
+    color: black;
+    text-decoration: none;
+}
+.aboutpage-button {
+    background-color: white;
+    font-size: 12px;
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 3rem;
+    border: 2px;
+    border-color: rgb(133 130 130);
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    transition: background-color 0.5s ease;
+    text-decoration: none;
+    color: black;
+    width: 5rem;
+}
+.aboutpage-button:hover {
+    background-color: lightgrey;
+}
+
+
+.location {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+}
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 40px;
+    align-content: space-between;
+    margin: 0 10px;
+    font-size: 15px;
+}
+.location-title {
+    text-align: left;
+}
+.location-text {
+    text-align: right;
+}
+
+
+/***** Desktop Layout for About Page *****/
+    @media screen and (min-width: 40rem) {
+        .aboutpage-navbar {
+            grid-column: 1 / span 3;
+            margin: 4% 0;
+        }
+        .aboutpage-navbar-right-1 {
+            color: black;
+            grid-column: 9 / span 2;
+            font-size: 0.95rem;
+            justify-content: right;
+            display: grid;
+        }
+        .aboutpage-navbar-right-2 {
+            color: white;
+            grid-column: 11/ span 2;
+            justify-content: left;
+            display: grid;
+        }
+        .aboutpage-button-1 {
+            grid-column: 1 / span 1;
+        }
+        .aboutpage-button-2 {
+            grid-column: 2 / span 1;
+            grid-row: 4;
+        }
+        .aboutpage-button-3 {
+            grid-column: 3 / span 1;
+            grid-row: 4;
+        }
+       .location-section {
+           display: flex;
+           justify-content: space-between;
+           flex-flow: row wrap;
+       }
+       .location {
+           flex-basis: 27.5%;
+       }
+        .location-title-1 {
+           grid-column: 2;
+           grid-row: 6;
+           justify-content: right;
+           display: grid;
+       }
