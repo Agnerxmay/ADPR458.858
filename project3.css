@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+footer {
+    margin-top: 3rem;
+    background-color: #6E418D;
+}
+footer h2{
+    color: white;
+    margin-top: 3rem;
+}
+footer p {
+    color: white;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.footer-2 img {
+    background: none;
+    text-decoration: none;
+    height: 40px;
+    padding-right: 14px;
+}
+
+@font-face {
+    font-family: "Cooper Black";
+    src: url("/fonts/cooper-black.otf");
+  }
+h1 {
+    font-size: 2.5rem;
+    color: #6E418D;
+    font-family: "Cooper Black", serif;
+    text-decoration: none;
+    text-align: center;
+}
+h2 {
+    font-size: 1.25rem;
+    color: #707070;
+    text-decoration: none;
+}
+p {
+    font-size: 1rem;
+    color: #707070;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Navbar */
+.navbar-right-2 a {
+    text-decoration: none;
+}
+.download-app-button {
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 2rem;
+    width: 11rem;
+    margin: 0.75rem;
+    border-color: #707070;
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: lightgrey;
+}
+.navbar-right-3 {
+    width: 70%;
+}
+.navbar-right-3 button {
+    border: none;
+    background-color: white;
+}
+
+
+/* Body Part for Mainpage*/
+.about-us-2 {
+    background-color: #F3F3F3;
+    padding: 2rem 0
+}
+.about-us-2 a {
+    color: white;
+    text-decoration: none;
+}
+.products-button {
+    background-color: #6E418D;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 15rem;
+    border: 2px;
+    border-color: rgb(133 130 130);
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    transition: background-color 0.5s ease;
+    width: 5rem;
+}
+.products-button:hover {
+    background-color: #707070;
+}
+.founder-words p {
+    padding-bottom: 1rem;
+    margin: 0;
+}
+/**** Layout ****/
+.container {
+    background-color: white;
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container > * {
+    grid-column: span 12;
+}
+.container-2 {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container-2 > * {
+    grid-column: span 12;
+}
+
+/**** Desktop Layout ****/
+@media screen and (min-width: 40rem) {
+
+    /* Navbar Layout */
+    .navbar-logo {
+        grid-column: 2 / span 1;
+        margin-top: 2.1rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-1 {
+        grid-column: 4 / span 2;
+        margin-top: 2.1rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-2 {
+        grid-column: 6 / span 1;
+        margin-top: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-3 {
+        grid-column: 7 / span 2;
+        margin-top: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-right-2 {
+        grid-column: 10 / span 2;
+        margin-top: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-right-3 {
+        grid-column: 12 / span 1;
+        margin-top: 2rem;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+    }
+
+    /* Body Part for Mainpage Layout */
+    .fresh-pressed-juice-1 {
+        grid-column: 2 / span 5;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .fresh-pressed-juice-2 {
+        grid-column: 7 / span 7;
+    }
+    .about-us-1{
+        grid-column: 1 / span 6;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: -4px;
+    }
+    .about-us-2 {
+        grid-column: 7 / span 7;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: -1.5rem;
+    }
+    .founder-pic {
+        grid-column: 2 / span 2;
+    }
+    .founder-words {
+        grid-column: 4 / span 9
+    }
+    /* Footer Layout */
+    .footer-1 {
+        grid-column: 2 / span 2;
+    }
+    .footer-2 {
+        grid-column: 4 / span 2;
+    }
+    .footer-3 {
+        grid-column: 2 / span 10;
+    }
+}
