@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+header {
+    background-color: #6F438E;
+    padding: 1rem;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+
+footer {
+    background-color: #744691;
+}
+footer h3{
+    color: white;
+    margin-top: 3rem;
+}
+footer p {
+    color: white;
+    padding: .5rem 0;
+    margin: 0;
+}
+.footer-2 img {
+    background: none;
+    text-decoration: none;
+    height: 40px;
+    padding-right: 14px;
+}
+hr {
+    width: 100%;
+    color: white;
+}
+@font-face {
+    font-family: "Cooper Black";
+    src: url("/fonts/cooper-black.otf");
+  }
+h1 {
+    font-size: 5rem;
+    color: white;
+    font-family: "Cooper Black", serif;
+    text-decoration: none;
+    text-align: justify;
+    padding-left: 5rem;
+}
+h2 {
+    font-size: 5rem;
+    color: transparent;
+    font-family: "Cooper Black", serif;
+    text-decoration: none;
+    text-align: justify;
+    padding-left: 5rem;
+    -webkit-text-stroke: 3px white;
+}
+h3 {
+    font-size: 2.5rem;
+    color: #6F438E;
+    font-family: "Cooper Black", serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+h4 {
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+p {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+img {
+    max-width: 100%;
+    image-rendering: -webkit-optimize-contrast;
+}
+svg {
+    background-color: transparent;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Navbar */
+.navbar-right-1 a {
+    text-decoration: none;
+}
+.download-app-button {
+    background-color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px 2rem;
+    width: 100%;
+    margin: 0.75rem;
+    border-color: white;
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: lightgrey;
+}
+
+/* Body Part for Mainpage*/
+.about-us-2 {
+    background-color: #F3F3F3;
+    padding: 2rem 0
+}
+.about-us-2 a {
+    color: white;
+    text-decoration: none;
+}
+.products-button {
+    background-color: #6F438E;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 15rem;
+    border: 2px;
+    border-color: rgb(133 130 130);
+    border-radius: 30px;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    transition: background-color 0.5s ease;
+}
+.products-button:hover {
+    background-color: #707070;
+}
+.founder-words p {
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+ /* Body Part for Smoothies Page */
+ .smoothies-body-bg {
+    background: url(/LJ2/bottlesforlandingpage_Landing\ pic.jpg), url(/LJ2/bottlesforlandingpage_Landing\ pic.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top -2.8% right -2%, top -2.8% left -2%, bottom 24% right 0%, bottom 24% left 0%;
+}
+ .smoothies-1 h2{
+    padding: 2rem;
+    margin-top: 3rem;
+ }
+ .smoothie-2 svg {
+     width: 70%;
+     padding-top: -3rem;
+     margin-top: -3rem;
+ }
+ .smoothie-3 svg {
+     width: 60%;
+     padding-top: -3rem;
+     margin-top: -3rem;
+ }
+ .smoothie-4 svg {
+     width: 60%;
+     padding-top: -3rem;
+     margin-top: -3rem;
+ }
+#berrysmoothiebottle,
+#berrysmoothiebottleshadow {
+    animation: berrysmoothie 4s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    position: relative;
+}
+
+@keyframes berrysmoothie {
+    from {
+        transform: translatey(0%);
+    }
+    to {
+        transform: translatey(10%);
+    }
+}
+
+#greensmoothiebottle,
+#greensmoothiebottleshadow {
+    animation: greenbottle 4s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    position: relative;
+}
+
+@keyframes greenbottle {
+    from {
+        transform: translatey(10%);
+    }
+    to {
+        transform: translatey(0%);
+    }
+}
+
+#orangebottlesmoothie,
+#orangebottlesmoothieshadow {
+    animation: orangebottle 4s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    position: relative;
+}
+
+@keyframes orangebottle {
+    from {
+        transform: translatey(0%);
+    }
+    to {
+        transform: translatey(10%);
+    }
+}
+
+ /* Body Part for Berry Page */
+ .berry-body-bg {
+    background: url(/LJ2/berrypage-compressed.png), url(/LJ2/berrypage-compressed.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
+}
+.berry {
+    background-image: url(/LJ2/berrypage-compressed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 56rem;
+    padding-left: 5rem;
+ }
+
+ /* Body Part for Orange Page */
+.orange-body-bg {
+    background: url(/LJ2/orangepage-min.png), url(/LJ2/orangepage-min.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
+}
+ .orange {
+    background-image: url(/LJ2/orangepage-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56rem;
+    padding-left: 5rem;
+ }
+
+
+  /* Body Part for Green Page */
+.green-body-bg {
+    background: url(/LJ2/greenpage-compressed.png), url(/LJ2/greenpage-compressed.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
+}
+.green {
+    background-image: url(/LJ2/greenpage-compressed.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 56rem;
+    padding-left: 5rem;
+ }
+ .benefits-greenpage img{
+   flex-shrink: 0;
+   object-fit: contain;
+   padding: 2rem 2rem;
+ }
+ .benefits-greenpage {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    margin-top: -10rem;
+    animation: greenpage 20s infinite linear;
+}
+
+@keyframes greenpage {
+    0%, 100% {
+        transform: translate3d(0,0,0);
+      }
+     60% {
+        transform: translate3d(-100%,0,0);
+      }
+   }
+
+ /* for orange, berry, and green page */
+ .benefits-1-left img {
+    margin: 1rem 0;
+}
+
+.benefits-1-right p {
+   padding-bottom: 2.5rem;
+   margin-top: 3rem;
+   text-align: left;
+}
+.product-image-4-button a{
+   margin-top: 5rem;
+   color: #6F438E;
+   text-decoration: none;
+}
+
+.backtohomepage-button {
+   font-size: 15px;
+   padding: 1.5rem 37%;
+   text-align: center;
+   border-color: black;
+   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+   transition: background-color 0.5s ease;
+}
+.backtohomepage-button:hover {
+   color: white;
+   background-color: #b1b1b1;
+}
+/**** Layout ****/
+.container {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 2rem;
+}
+.container > * {
+    grid-column: span 12;
+}
+.container-2 {
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container-2 > * {
+    grid-column: span 12;
+}
+.container-3 {
+    background: url(/LJ2/pink-purple-gradient-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5E5D4;
+    background-size: cover;
+    padding-bottom: 5rem;
+    width: min(100%, 90rem);
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+}
+.container-3 > * {
+    grid-column: span 12;
+}
+
+/**** Desktop Layout ****/
+@media screen and (min-width: 40rem) {
+
+    /* Navbar Layout */
+    .navbar-logo {
+        grid-column: 2 / span 2;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-1 {
+        grid-column: 8 / span 1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-2 {
+        grid-column: 9 / span 1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navbar-right-1 {
+        grid-column: 10 / span 2;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Body Part for Mainpage Layout */
+    .fresh-pressed-juice-1 {
+        grid-column: 2 / span 5;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .fresh-pressed-juice-2 {
+        grid-column: 7 / span 7;
+    }
+    .about-us-1{
+        grid-column: 1 / span 6;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: -4px;
+    }
+    .about-us-2 {
+        grid-column: 7 / span 7;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: -1.5rem;
+    }
+    .founder-pic {
+        grid-column: 2 / span 2;
+    }
+    .founder-words {
+        grid-column: 4 / span 9
+    }
+    /* Footer Layout */
+    .footer-1 {
+        grid-column: 2 / span 2;
+    }
+    .footer-2 {
+        grid-column: 4 / span 2;
+    }
+    .footer-3 {
+        grid-column: 2 / span 10;
+    }
+
+     /* Body Part for Smoothies Page Layout */
+     .smoothie-2 {
+         grid-column: 2 / span 3;
+     }
+     .smoothie-3 {
+        grid-column: 5 / span 4;
+    }
+    .smoothie-4 {
+        grid-column: 9 / span 4;
+    }
+
+    /* Body Part for Orange Page Layout */
+    .benefits-1-left {
+        grid-column: 3/ span 1;
+    }
+    .benefits-1-right {
+        grid-column: 4 / span 6;
+    }
+    .benefits-center-1 {
+        grid-column: 4 / span 1;
+    }
+    .benefits-center-2 {
+        grid-column: 6 / span 1;
+    }
+    .benefits-center-3 {
+        grid-column: 8 / span 1;
+    }
+    .product-image-1 {
+        margin-top: 5rem;
+        grid-column: 2 / span 10;
+    }
+    .product-image-2 {
+        grid-column: 2/ span 5;
+    }
+    .product-image-3 {
+        grid-column: 7 / span 5;
+    }
+    .product-image-4-button {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        grid-column: 2 / span 10
+    }
+}
