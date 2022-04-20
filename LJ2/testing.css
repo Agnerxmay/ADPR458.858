@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+}
+svg {
+    width: 2rem;
+    height: 5rem;
+    fill: none;
+    background-color: transparent;
+}
+#berrybottle {
+    animation: spin 3s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+@keyframes spin {
+    from {
+        transform: translatey(0%) rotateZ(0deg);
+    }
+    to {
+        transform: translatey(20%) rotate(5deg);
+    }
+}
