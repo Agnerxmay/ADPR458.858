@@ -490,7 +490,6 @@ h1 {
         display: block;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
         margin-bottom: -4px;
     }
     .about-us-2 {
@@ -498,7 +497,6 @@ h1 {
         display: block;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
         margin-left: -1.5rem;
     }
     .about-us-1 img{
