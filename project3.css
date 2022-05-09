@@ -47,30 +47,31 @@ hr {
     color: white;
 }
 @font-face {
-    font-family: "Cooper Black";
-    src: url("/fonts/cooper-black.otf");
+    font-family: "cooper-black-std";
+    src: url("https://use.typekit.net/irm7wno.css");
   }
 h1 {
-    font-size: 5rem;
+    font-size: 200%;
     color: white;
-    font-family: "Cooper Black", serif;
+    font-family: "cooper", sans-serif;
     text-decoration: none;
     text-align: justify;
-    padding-left: 5rem;
+    padding-left: 10%;
+    margin-top: 10%;
 }
 h2 {
-    font-size: 5rem;
+    font-size: 200%;
     color: transparent;
-    font-family: "Cooper Black", serif;
+    font-family: "cooper", sans-serif;
     text-decoration: none;
     text-align: justify;
-    padding-left: 5rem;
-    -webkit-text-stroke: 3px white;
+    padding-left: 10%;
+    -webkit-text-stroke: 1px white;
 }
 h3 {
     font-size: 2.5rem;
     color: #6F438E;
-    font-family: "Cooper Black", serif;
+    font-family: "cooper", sans-serif;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
@@ -88,6 +89,7 @@ p {
     padding-bottom: 1rem;
     padding-left: 1.5rem;
     margin-bottom: 2rem;
+    line-height: 1.5rem;
 }
 img {
     max-width: 100%;
@@ -99,6 +101,20 @@ svg {
 }
 
 /* Navbar */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar-1 {
+    padding: 10% 10% 0 20%;
+}
+.navbar-2 {
+    padding: 9%;
+}
+.navbar-right-1 {
+    flex-grow: 1;
+}
+
 .navbar-right-1 a {
     text-decoration: none;
 }
@@ -119,10 +135,22 @@ svg {
     background-color: lightgrey;
 }
 
-/* Body Part for Mainpage*/
-.about-us-2 {
-    background-color: #F3F3F3;
-    padding: 2rem 0
+/* container mobile layout */
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container-3 {
+    background: url(/LJ2/pink-purple-gradient-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+
+/* Body Part for aboutus*/
+.about-us-1 img{
+    display: none;
 }
 .about-us-2 a {
     color: white;
@@ -130,9 +158,9 @@ svg {
 }
 .products-button {
     background-color: #6F438E;
-    font-size: 1rem;
-    padding: 10px 20px;
-    margin: 1rem 1rem 1rem 15rem;
+    font-size: 100%;
+    padding: 2% 10%;
+    margin: 10% 10% 20% 30%;
     border: 2px;
     border-color: rgb(133 130 130);
     border-radius: 30px;
@@ -142,37 +170,58 @@ svg {
 .products-button:hover {
     background-color: #707070;
 }
-.founder-words p {
-    padding-bottom: 1rem;
-    margin: 0;
+.ourbrands {
+    margin-top: 5%;
+}
+.ourbrands img {
+    margin-bottom: 5%;
+    padding: 1%;
 }
 
  /* Body Part for Smoothies Page */
- .smoothies-body-bg {
-    background: url(/LJ2/bottlesforlandingpage_Landing\ pic.jpg), url(/LJ2/bottlesforlandingpage_Landing\ pic.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg);
+ .smoothies {
+    background-image: url(/LJ2/bottlesforlandingpagewofruits.jpg);
     background-repeat: no-repeat;
-    background-size: 38%;
-    background-position: top -2.8% right -2%, top -2.8% left -2%, bottom 24% right 0%, bottom 24% left 0%;
+    background-size: cover;
+    background-position: center;
+ }
+.smoothies img {
+    animation: fruits .5s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
 }
+@keyframes fruits {
+ from {
+     transform: translatey(0%);
+ }
+ to {
+     transform: translatey(5%);
+ }
+}
+ .smoothies-body-bg {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 0%, rgba(111,67,142,1) 42%, rgba(210,186,194,1) 42%, rgba(116,70,145,1) 100%);
+}
+
  .smoothies-1 h2{
     padding: 2rem;
     margin-top: 3rem;
  }
- .smoothie-2 svg {
-     width: 70%;
-     padding-top: -3rem;
-     margin-top: -3rem;
+ .smoothie-2 {
+    width: 50%;
+    margin-left: 25%;
  }
- .smoothie-3 svg {
-     width: 60%;
-     padding-top: -3rem;
-     margin-top: -3rem;
+ .smoothie-3 {
+    width: 50%;
+    margin-left: 25%;
  }
- .smoothie-4 svg {
-     width: 60%;
-     padding-top: -3rem;
-     margin-top: -3rem;
+ .smoothie-4  {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: -6%;
+    padding-bottom: 15%;
  }
+
 #berrysmoothiebottle,
 #berrysmoothiebottleshadow {
     animation: berrysmoothie 4s ease-in-out infinite alternate;
@@ -226,59 +275,66 @@ svg {
 
  /* Body Part for Berry Page */
  .berry-body-bg {
-    background: url(/LJ2/berrypage-compressed.png), url(/LJ2/berrypage-compressed.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
-    background-repeat: no-repeat;
-    background-size: 38%;
-    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
-}
-.berry {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 3%, rgba(27,20,100,1) 23%, rgba(245,229,212,1) 22%, rgba(116,70,145,1) 53%, rgba(255,255,255,1) 54%)
+ }
+/* Berry Mobile Layout */
+.berry{
     background-image: url(/LJ2/berrypage-compressed.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 56rem;
-    padding-left: 5rem;
+    background-size: cover;
+    padding-bottom: 11%;
+    background-position: center;
+    margin-top: -10%;
+    margin-bottom: 10%;
  }
+
+
 
  /* Body Part for Orange Page */
 .orange-body-bg {
-    background: url(/LJ2/orangepage-min.png), url(/LJ2/orangepage-min.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
-    background-repeat: no-repeat;
-    background-size: 38%;
-    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
-}
- .orange {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(253,146,31,1) 25%, rgba(209,197,184,1) 27%, rgba(116,70,145,1) 53%, rgba(255,255,255,1) 54%);
+} 
+/* orange mobile layout */
+.orange {
     background-image: url(/LJ2/orangepage-min.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 56rem;
-    padding-left: 5rem;
+    padding-bottom: 23%;
+    background-position: center;
+    margin-top: -10%;
  }
+
+
 
 
   /* Body Part for Green Page */
 .green-body-bg {
-    background: url(/LJ2/greenpage-compressed.png), url(/LJ2/greenpage-compressed.png), url(/LJ2/pink-purple-gradient-bg.jpg), url(/LJ2/pink-purple-gradient-bg.jpg), white;
-    background-repeat: no-repeat;
-    background-size: 38%;
-    background-position: top -1.8% right 0%, top .2% left 0%, top 30% left 0%, top 30% right 0%, bottom 10px right 10px, bottom 10px left 10px;
-}
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(174,211,32,1) 24%, rgba(209,197,184,1) 27%, rgba(116,70,145,1) 56%, rgba(255,255,255,1) 54%);
+} 
+/* green mobile layout */
 .green {
     background-image: url(/LJ2/greenpage-compressed.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 56rem;
-    padding-left: 5rem;
+    background-size: cover;
+    padding-bottom: 22%;
+    background-position: center;
+    margin-top: -10%;
+    margin-bottom: 10%;
  }
- .benefits-greenpage img{
+
+ .benefits-info img{
    flex-shrink: 0;
    object-fit: contain;
    padding: 2rem 2rem;
  }
- .benefits-greenpage {
+ .benefits-info {
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 70%;
-    margin-top: -10rem;
+    margin-top: 1%;
     animation: greenpage 20s infinite linear;
 }
 
@@ -292,34 +348,45 @@ svg {
    }
 
  /* for orange, berry, and green page */
- .benefits-1-left img {
-    margin: 1rem 0;
+.product-image-1 img {
+    margin: 10% 5%;
+    width: 90%;    
 }
-
-.benefits-1-right p {
-   padding-bottom: 2.5rem;
-   margin-top: 3rem;
-   text-align: left;
+.product-image-2 img {
+    margin: 5%;
+    width: 90%; 
 }
+.product-image-3 img {
+    margin: 5%;
+    width: 90%;  
+}
+.product-image-4-button {
+    margin: 5% 5% 10% 5%;
+    flex-grow: 1;
+    }
 .product-image-4-button a{
-   margin-top: 5rem;
-   color: #6F438E;
-   text-decoration: none;
-}
-
+        color: #6F438E;
+        text-decoration: none;
+     } 
 .backtohomepage-button {
-   font-size: 15px;
-   padding: 1.5rem 37%;
-   text-align: center;
-   border-color: black;
-   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
-   transition: background-color 0.5s ease;
-}
+        font-size: 37%;
+        padding: 1.5rem 37%;
+        text-align: center;
+        border-color: black;
+        box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+        transition: background-color 0.5s ease;
+     }
 .backtohomepage-button:hover {
-   color: white;
-   background-color: #b1b1b1;
-}
-/**** Layout ****/
+        color: white;
+        background-color: #b1b1b1;
+     } 
+
+
+
+
+
+/**** Elements Desktop Layout ****/
+@media screen and (min-width: 40rem) {
 .container {
     width: min(100%, 90rem);
     margin: 0 auto;
@@ -360,6 +427,16 @@ svg {
 .container-3 > * {
     grid-column: span 12;
 }
+h1 {
+    font-size: 5rem;
+    margin-top: 5%;
+    padding: 0;
+ }
+ h2 {
+    font-size: 5rem;
+    padding: 0;
+ }
+}
 
 /**** Desktop Layout ****/
 @media screen and (min-width: 40rem) {
@@ -373,15 +450,20 @@ svg {
     }
     .navbar-1 {
         grid-column: 8 / span 1;
+        font-size: 92%;
         display: grid;
         justify-content: center;
         align-items: center;
     }
     .navbar-2 {
         grid-column: 9 / span 1;
+        font-size: 92%;
         display: grid;
         justify-content: center;
         align-items: center;
+        padding: 1%;
+        margin-top: 9%;
+        text-align: center;
     }
     
     .navbar-right-1 {
@@ -392,7 +474,7 @@ svg {
     }
 
 
-    /* Body Part for Mainpage Layout */
+    /* Body Part for aboutus Layout */
     .fresh-pressed-juice-1 {
         grid-column: 2 / span 5;
         display: block;
@@ -401,6 +483,7 @@ svg {
     }
     .fresh-pressed-juice-2 {
         grid-column: 7 / span 7;
+        margin-top: 10%;
     }
     .about-us-1{
         grid-column: 1 / span 6;
@@ -418,12 +501,32 @@ svg {
         margin-top: 3rem;
         margin-left: -1.5rem;
     }
-    .founder-pic {
-        grid-column: 2 / span 2;
+    .about-us-1 img{
+        display: flex;
     }
-    .founder-words {
-        grid-column: 4 / span 9
+    .about-us-2 {
+        background-color: #F3F3F3;
+        padding: 2rem 0;
     }
+    .about-us-2 a {
+        color: white;
+        text-decoration: none;
+    }
+    .products-button {
+        background-color: #6F438E;
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 1rem 1rem 1rem 15rem;
+        border: 2px;
+        border-color: rgb(133 130 130);
+        border-radius: 30px;
+        box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+        transition: background-color 0.5s ease;
+    }
+    .products-button:hover {
+        background-color: #707070;
+    }
+
     /* Footer Layout */
     .footer-1 {
         grid-column: 2 / span 2;
@@ -438,43 +541,93 @@ svg {
      /* Body Part for Smoothies Page Layout */
      .smoothie-2 {
          grid-column: 2 / span 3;
+         width: 70%;
      }
      .smoothie-3 {
         grid-column: 5 / span 4;
+        width: 60%;
     }
     .smoothie-4 {
         grid-column: 9 / span 4;
+        width:60%;
     }
 
-    /* Body Part for Orange Page Layout */
-    .benefits-1-left {
-        grid-column: 3/ span 1;
+     /*Berry Web Layout*/
+    .berry{
+        background-image: url(/LJ2/berrypage-compressed.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 5rem;
+        margin-top: -4%;
+        padding-top: 2%;
+     }
+     .orange {
+        background-image: url(/LJ2/orangepage-min.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 56rem;
+        padding-left: 5rem;
+        margin-top: 0;
+     }
+     .green {
+        background-image: url(/LJ2/greenpage-compressed.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -0.7%;
+        padding-left: 8rem;
+     }
+
+
+    /* Body Part for Orange, Green, Berry Page Layout */
+    .benefits {
+        margin-top: -2%;
     }
-    .benefits-1-right {
-        grid-column: 4 / span 6;
-    }
-    .benefits-center-1 {
-        grid-column: 4 / span 1;
-    }
-    .benefits-center-2 {
-        grid-column: 6 / span 1;
-    }
-    .benefits-center-3 {
-        grid-column: 8 / span 1;
-    }
+
+    .benefits-info img{
+        flex-shrink: 0;
+        object-fit: contain;
+        padding: 2rem 2rem;
+      }
+      .benefits-info {
+         display: flex;
+         width: 100%;
+         height: 70%;
+         margin-top: -20rem;
+         animation: greenpage 30s infinite linear;
+     }
+     
     .product-image-1 {
-        margin-top: 5rem;
+        margin-top: -2rem;
         grid-column: 2 / span 10;
     }
     .product-image-2 {
         grid-column: 2/ span 5;
+        margin-top: -7rem;
     }
     .product-image-3 {
         grid-column: 7 / span 5;
+        margin-top: -7rem;
     }
     .product-image-4-button {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
         grid-column: 2 / span 10
     }
+    .product-image-4-button a{
+        color: #6F438E;
+        text-decoration: none;
+     }
+     
+     .backtohomepage-button {
+        font-size: 88%;
+        padding: 3% 37%;
+        text-align: center;
+        border-color: black;
+        box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+        transition: background-color 0.5s ease;
+     }
+     .backtohomepage-button:hover {
+        color: white;
+        background-color: #b1b1b1;
+     }
 }
