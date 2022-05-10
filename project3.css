@@ -46,14 +46,32 @@ hr {
     width: 100%;
     color: white;
 }
-@font-face {
+
+/*@font-face {
     font-family: "cooper-black-std";
     src: url("https://use.typekit.net/irm7wno.css");
+  } */
+
+  @import url("https://p.typekit.net/p.css?s=1&k=irm7wno&ht=tk&f=6839.6840&a=24916891&app=typekit&e=css");
+
+  @font-face {
+  font-family:"cooper-black-std";
+  src:url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/9044bf/000000000000000000013102/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
   }
+  
+  @font-face {
+  font-family:"cooper-black-std";
+  src:url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4e1b68/000000000000000000013101/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+  
+.tk-cooper-black-std { font-family: "cooper-black-std",serif; }
+
 h1 {
     font-size: 200%;
     color: white;
-    font-family: "cooper", sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     text-decoration: none;
     text-align: justify;
     padding-left: 10%;
@@ -62,7 +80,7 @@ h1 {
 h2 {
     font-size: 200%;
     color: transparent;
-    font-family: "cooper", sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     text-decoration: none;
     text-align: justify;
     padding-left: 10%;
@@ -71,7 +89,7 @@ h2 {
 h3 {
     font-size: 2.5rem;
     color: #6F438E;
-    font-family: "cooper", sans-serif;
+    font-family: "cooper-black-std", sans-serif;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
@@ -192,12 +210,12 @@ svg {
      transform: translatey(0%);
  }
  to {
-     transform: translatey(5%);
+     transform: translatey(2%);
  }
 }
  .smoothies-body-bg {
     background: rgb(111,67,142);
-    background: linear-gradient(180deg, rgba(111,67,142,1) 0%, rgba(111,67,142,1) 42%, rgba(210,186,194,1) 42%, rgba(116,70,145,1) 100%);
+    linear-gradient: (180deg, rgba(111,67,142,1) 3%, rgba(27,20,100,1) 10%, rgba(245,229,212,1) 16%, rgba(116,70,145,1) 37%, rgba(255,255,255,1) 38%)
 }
 
  .smoothies-1 h2{
@@ -273,7 +291,7 @@ svg {
  /* Body Part for Berry Page */
  .berry-body-bg {
     background: rgb(111,67,142);
-    background: linear-gradient(180deg, rgba(111,67,142,1) 3%, rgba(27,20,100,1) 23%, rgba(245,229,212,1) 22%, rgba(116,70,145,1) 53%, rgba(255,255,255,1) 54%)
+    background: linear-gradient(180deg, rgba(111,67,142,1) 3%, rgba(27,20,100,1) 19.9%, rgba(245,229,212,1) 19%, rgba(116,70,145,1) 38.2%, rgba(255,255,255,1) 37%);
  }
 /* Berry Mobile Layout */
 .berry{
@@ -291,7 +309,7 @@ svg {
  /* Body Part for Orange Page */
 .orange-body-bg {
     background: rgb(111,67,142);
-    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(253,146,31,1) 25%, rgba(209,197,184,1) 27%, rgba(116,70,145,1) 53%, rgba(255,255,255,1) 54%);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(253,146,31,1) 19.7%, rgba(209,197,184,1) 20%, rgba(116,70,145,1) 37.6%, rgba(255,255,255,1) 35%);
 } 
 /* orange mobile layout */
 .orange {
@@ -309,7 +327,7 @@ svg {
   /* Body Part for Green Page */
 .green-body-bg {
     background: rgb(111,67,142);
-    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(174,211,32,1) 24%, rgba(209,197,184,1) 27%, rgba(116,70,145,1) 56%, rgba(255,255,255,1) 54%);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(174,211,32,1) 20.8%, rgba(209,197,184,1) 20%, rgba(116,70,145,1) 39.2%, rgba(255,255,255,1) 37%);
 } 
 /* green mobile layout */
 .green {
@@ -366,8 +384,8 @@ svg {
         text-decoration: none;
      } 
 .backtohomepage-button {
-        font-size: 37%;
-        padding: 1.5rem 37%;
+        font-size: 68%;
+        padding: 1.5rem 26%;
         text-align: center;
         border-color: black;
         box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
@@ -433,6 +451,24 @@ h1 {
     font-size: 5rem;
     padding: 0;
  }
+
+ .smoothies-body-bg {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 0%, rgba(111,67,142,1) 42%, rgba(210,186,194,1) 42%, rgba(116,70,145,1) 100%);
+}
+.berry-body-bg {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 3%, rgba(27,20,100,1) 23%, rgba(245,229,212,1) 22%, rgba(116,70,145,1) 53.4%, rgba(255,255,255,1) 53%);
+ }
+.orange-body-bg {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(253,146,31,1) 25%, rgba(209,197,184,1) 27%, rgba(116,70,145,1) 53%, rgba(255,255,255,1) 54%);
+}
+.green-body-bg {
+    background: rgb(111,67,142);
+    background: linear-gradient(180deg, rgba(111,67,142,1) 7%, rgba(174,211,32,1) 25%, rgba(209,197,184,1) 26%, rgba(116,70,145,1) 55.6%, rgba(255,255,255,1) 52%);
+} 
+
 }
 
 /**** Desktop Layout ****/
