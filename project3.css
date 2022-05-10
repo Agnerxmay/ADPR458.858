@@ -372,7 +372,7 @@ svg {
     width: 90%;  
 }
 .product-image-4-button {
-    margin-left: 9%;
+    margin-left: 5%;
     margin-bottom: 10%;
     flex-grow: 1;
 }
@@ -643,7 +643,7 @@ h1 {
      }
     
      .backtohomepage-button {
-        font-size: 93%;
+        font-size: 70%;
         padding: 3% 36%;
         text-align: center;
         border-color: black;
