@@ -305,7 +305,6 @@ svg {
  }
 
 
-
  /* Body Part for Orange Page */
 .orange-body-bg {
     background: rgb(111,67,142);
@@ -320,9 +319,6 @@ svg {
     background-position: center;
     margin-top: -10%;
  }
-
-
-
 
   /* Body Part for Green Page */
 .green-body-bg {
@@ -376,19 +372,17 @@ svg {
     width: 90%;  
 }
 .product-image-4-button {
-    margin: 5% 5% 10% 9%;
+    margin-left: 9%;
+    margin-bottom: 10%;
     flex-grow: 1;
-    }
+}
 .product-image-4-button a{
     color: #6F438E;
     text-decoration: none;
 } 
 .backtohomepage-button {
-    font-size: 100%;
-    padding: 5% 10%;
-    width: 100%;
+    padding: 5% 12%;
     text-align: center;
-    justify-content: center;
     border-color: black;
     box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
     transition: background-color 0.5s ease;
