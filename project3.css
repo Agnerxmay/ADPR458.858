@@ -380,25 +380,21 @@ svg {
     flex-grow: 1;
     }
 .product-image-4-button a{
-        color: #6F438E;
-        text-decoration: none;
-     } 
+    color: #6F438E;
+    text-decoration: none;
+} 
 .backtohomepage-button {
-        font-size: 68%;
-        padding: 1.5rem 8%;
-        text-align: center;
-        border-color: black;
-        box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
-        transition: background-color 0.5s ease;
-     }
+    font-size: 80%;
+    padding: 6% 22%;
+    text-align: center;
+    border-color: black;
+    box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
+    transition: background-color 0.5s ease;
+}
 .backtohomepage-button:hover {
-        color: white;
-        background-color: #b1b1b1;
-     } 
-
-
-
-
+    color: white;
+    background-color: #b1b1b1;
+} 
 
 /**** Elements Desktop Layout ****/
 @media screen and (min-width: 40rem) {
