@@ -395,7 +395,7 @@ svg {
 }
 .backtohomepage-button:hover {
     color: white;
-    background-color: #b1b1b1;
+    background-color: #969595;
 } 
 
 /**** Elements Desktop Layout ****/
@@ -649,8 +649,8 @@ h1 {
      }
     
      .backtohomepage-button {
-        font-size: 88%;
-        padding: 3% 37%;
+        font-size: 93%;
+        padding: 3% 36%;
         text-align: center;
         border-color: black;
         box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 15%);
