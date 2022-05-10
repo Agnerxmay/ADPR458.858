@@ -381,6 +381,7 @@ svg {
     text-decoration: none;
 } 
 .backtohomepage-button {
+    font-size: 5%;
     padding: 5% 10%;
     text-align: center;
     border-color: black;
