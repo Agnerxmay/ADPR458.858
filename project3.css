@@ -567,14 +567,17 @@ h1 {
      .smoothie-2 {
          grid-column: 2 / span 3;
          width: 70%;
+         margin-top: -6rem;
      }
      .smoothie-3 {
         grid-column: 5 / span 4;
         width: 60%;
+        margin-top: -4rem;
     }
     .smoothie-4 {
         grid-column: 9 / span 4;
         width:60%;
+        margin-top: -6rem;
     }
 
      /*Berry Web Layout*/
